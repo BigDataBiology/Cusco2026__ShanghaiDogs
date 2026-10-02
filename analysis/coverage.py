@@ -59,7 +59,7 @@ def get_coverage(new2old, ibam):
         coverage[contig][start:end] = cov
 
     if p_bedtools.wait() != 0:
-        raise OSError(f'Error running bedtools')
+        raise OSError('Error running bedtools')
 
     coverage_by_bin = defaultdict(list)
     for contig,covs in coverage.items():

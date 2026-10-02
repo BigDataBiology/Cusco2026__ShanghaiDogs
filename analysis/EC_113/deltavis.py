@@ -13,7 +13,6 @@ had been aligned. Tick labels still show original coordinates.
 """
 
 import argparse
-import sys
 from collections import OrderedDict
 from dataclasses import dataclass, field
 

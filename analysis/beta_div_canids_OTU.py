@@ -99,7 +99,7 @@ def remove_0_sum(OTUs_tab):
 # Calculate relative abundance of OTU table
 def rel_ab_otu(otu_tab):
     """
-    check OTU table orientation, tranpose when necessary,
+    check OTU table orientation, transpose when necessary,
     and calculate relative abundance of OTUs/sample.
     Index (rows) should contain the samples
     """

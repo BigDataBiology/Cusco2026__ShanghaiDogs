@@ -141,7 +141,7 @@ def generate_data():
         assert data.shape[1] == data1.shape[1] - 52
 
 def generate_training_data():
-    os.makedirs(f"/data/sjpan/Soil/training", exist_ok=True)
+    os.makedirs("/data/sjpan/Soil/training", exist_ok=True)
     for ref in data_list:
         print(ref)
         os.makedirs(f"/data/sjpan/Soil/training/{ref}", exist_ok=True)
@@ -172,7 +172,7 @@ def run_checkm2():
     for ref in data_list:
         print(ref)
         os.chdir(f"/public/home/pansj/abundance_estimation/training/{ref}/")
-        os.system(f"/public/home/pansj/software/CheckM2-main/bin/checkm2 predict --threads 30 --input output_bins --output-directory checkm2_output -x .fa")
+        os.system("/public/home/pansj/software/CheckM2-main/bin/checkm2 predict --threads 30 --input output_bins --output-directory checkm2_output -x .fa")
 
 data_list1 = ['D000', 'D001', 'D002', 'D003', 'D004', 'D005', 'D006', 'D007', 'D008', 'D010', 'D011', 'D012', 'D013', 'D014',
               'D015', 'D016', 'D017', 'D018', 'D019', 'D020', 'D021', 'D022', 'D023', 'D024', 'D025', 'D026', 'D027', 'D028', 'D029']

@@ -42,7 +42,7 @@ website](https://sh-dog-mags.big-data-biology.org/).
 
 ### Preprocessed
 
-1. Quality controled FQs
+1. Quality controlled FQs
 2. Not fully polished assemblies
 3. singleM/mOTU output tables
 

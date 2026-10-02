@@ -44,7 +44,7 @@ def collate_orfs(fnafiles):
     ix = 0
     with lib.xz_out(ofile) as out:
         with lib.xz_out(f'{BASE_PRODIGAL}/SHD.ORF.orig.tsv.xz') as o_out:
-            o_out.write(f'ORF\tSample\tOriginal_ID\tStart\tEnd\tStrand\tPartial\n'.encode('ascii'))
+            o_out.write('ORF\tSample\tOriginal_ID\tStart\tEnd\tStrand\tPartial\n'.encode('ascii'))
             for f in fnafiles:
                 for h,seq in fasta.fasta_iter(f, full_header=True):
                     orf_id = lib.pad9('SHD.ORF', ix)

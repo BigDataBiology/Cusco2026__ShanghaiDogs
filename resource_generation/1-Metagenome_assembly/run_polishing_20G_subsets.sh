@@ -79,6 +79,6 @@ for n in {00..52}
     -r "${ngs_reads}/D0${n}_350_trim_filter.pair.1.fq.gz ${ngs_reads}/D0${n}_350_trim_filter.pair.2.fq.gz" \
     -t 32 -m 2G
 
-    mv ${out_polca}/D0${n}_20G/D0${n}_PP_1.fasta.PolcaCorrected.fa ${out_path}/D0${n}_20G/D0${n}_PP1_PolcaCorr.fasta
+    mv ${out_polca}/D0${n}_20G/D0${n}_PP_1.fasta.PolcaCorrected.fa ${out_polca}/D0${n}_20G/D0${n}_PP1_PolcaCorr.fasta
   done
 

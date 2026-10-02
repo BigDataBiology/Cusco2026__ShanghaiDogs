@@ -14,12 +14,12 @@ ont_results='/data/anna/animal_metagenome/long-mg-dog/00_quality_control/00_raw_
 ### NGS
 for n in {00..08}
   do
-    fastqc -o ${ngs_results} ${ngs_data_1}/D0${n}/D0${n}_350.fq1.gz ${ngs_data}/D0${n}/D0${n}_350.fq2.gz -t 64
+    fastqc -o ${ngs_results} ${ngs_data_1}/D0${n}/D0${n}_350.fq1.gz ${ngs_data_1}/D0${n}/D0${n}_350.fq2.gz -t 64
   done
 
 for n in {10..52}
   do
-    fastqc -o ${ngs_results} ${ngs_data_2}/D0${n}/D0${n}_350.fq1.gz ${ngs_data}/D0${n}/D0${n}_350.fq2.gz -t 64
+    fastqc -o ${ngs_results} ${ngs_data_2}/D0${n}/D0${n}_350.fq1.gz ${ngs_data_2}/D0${n}/D0${n}_350.fq2.gz -t 64
   done
 
 ### ONT

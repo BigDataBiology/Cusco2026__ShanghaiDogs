@@ -55,7 +55,7 @@ origins = pd.read_csv(origin_tsv, sep="\t")
 count100aa = origins['SmORF ID'].value_counts().to_dict()
 
 def smorf_sorting_key(mapping_item):
-    # Sort by the number of SmORFs in the cluster and then by the representive
+    # Sort by the number of SmORFs in the cluster and then by the representative
     # 100AA SmORF ID as a tiebreaker
     [rep] = [seq_id for seq_id, similarity in mapping_item[1] if similarity == "*"]
     return (

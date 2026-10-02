@@ -54,7 +54,6 @@ def bedtools_genomecov(sorted_bam):
 def plot_coverage_profiles(bedgraphs, samples):
     """Plot coverage profiles for competitively-mapped short reads across the reference."""
     import numpy as np
-    import matplotlib
     import matplotlib.pyplot as plt
 
     WINDOW_SIZE = 1000

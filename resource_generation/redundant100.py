@@ -1,6 +1,5 @@
 from macrel import fasta
 from collections import defaultdict
-import gzip
 
 from lib import pad9, xz_out
 

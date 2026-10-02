@@ -7,8 +7,6 @@ Created on Tue Feb 20 13:43:05 2024
 
 import sys
 import pandas as pd
-import os
-import gzip
 
 sample_id = sys.argv[1]
 #sample_id='D000'

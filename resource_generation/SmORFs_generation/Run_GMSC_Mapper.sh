@@ -1,5 +1,5 @@
-#Install GMSC-mapper: https://github.com/BigDataBiology/GMSC-mapper
 #!/bin/bash -l
+#Install GMSC-mapper: https://github.com/BigDataBiology/GMSC-mapper
 #PBS -N gmsc_mapper_job
 #PBS -l select=1:ncpus=24:mem=80gb
 #PBS -l walltime=48:00:00
@@ -28,8 +28,8 @@ find "$input" -maxdepth 1 -type f \( -name "*.fna" -o -name "*.fna.gz" \) | whil
     fi
 
     filename=$(basename "$file")
-    filename_no_ext="${filename%.fna}"
-    filename_no_ext="${filename_no_ext%.gz}"
+    filename_no_ext="${filename%.gz}"
+    filename_no_ext="${filename_no_ext%.fna}"
 
     outdir="$output/$filename_no_ext"
     mkdir -p "$outdir"

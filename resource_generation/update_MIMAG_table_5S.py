@@ -1,7 +1,5 @@
-import sys
 import pandas as pd
 import os
-import gzip
 
 os.chdir('/data/Projects/ShanghaiDogs/')
 

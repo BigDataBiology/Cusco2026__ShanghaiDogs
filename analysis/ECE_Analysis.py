@@ -1,10 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from matplotlib.patches import Patch
 import matplotlib.gridspec as gridspec
 import matplotlib.cm as cm
-from matplotlib.colors import LinearSegmentedColormap
 import numpy as np
 import gzip
 import re

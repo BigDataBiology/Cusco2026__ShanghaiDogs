@@ -16,7 +16,6 @@ def lookup_1seq(h, seq):
         "seq_original": f'>{h}\n{seq}',
         "command": f'@map:mapseq(">{h}\\n{seq}", "-1")',
     }
-    payload
 
     r = requests.post(
             URL,
@@ -78,7 +77,6 @@ def save_results(final):
     """
     Save the final DataFrame to a CSV file.
     """
-    import pandas as pd
     final.to_csv('../intermediate-outputs/07_ribosomal_genes/microbe-atlas.csv.gz', index=False)
 
 results = []

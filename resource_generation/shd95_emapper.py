@@ -11,7 +11,6 @@ eqs = clusters.query('rel1 == "=" & rel2 == "="')
 
 total_95nt = len(set(clusters['SHD.95NT']))
 eq_95nt = len(set(eqs['SHD.95NT']))
-total_95nt == eq_95nt
 assert total_95nt == eq_95nt
 
 eqs = eqs[['SHD.95NT', 'SHD_ORF']].sort_values(by=['SHD.95NT','SHD_ORF'])

@@ -2,7 +2,6 @@ from os import path
 import gzip
 import pandas as pd
 from glob import glob
-import os
 TARGETDIR = '/home/luispedro/ShanghaiDogsMAGs'
 
 def copy_rename(fafile, ix, extra):

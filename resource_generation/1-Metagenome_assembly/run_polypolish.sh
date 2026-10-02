@@ -1,3 +1,5 @@
+#!/bin/bash
+
 out_medaka="/data/anna/animal_metagenome/long-mg-dog/02_polishing/00_medaka"
 input_reads="/data/anna/animal_metagenome/long-mg-dog/00_quality_control/01_trim_filter_data/ngs"
 out_path="/data/anna/animal_metagenome/long-mg-dog/02_polishing/01_polypolish"

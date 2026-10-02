@@ -1,1 +1,3 @@
+#!/bin/bash
+
 checkm2 predict -i intermediate-outputs/polish_evaluation_mags/flye_bins -o intermediate-outputs/polish_evaluation_mags/flye_bins_checkm --database_path ${HOME}/checkm_database/uniref100.KO.1.dmnd -t 48 -x .fna

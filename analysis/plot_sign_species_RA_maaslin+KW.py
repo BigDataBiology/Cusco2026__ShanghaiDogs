@@ -9,7 +9,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
-from scipy.stats import kruskal, mannwhitneyu
+from scipy.stats import mannwhitneyu
 from statsmodels.stats.multitest import multipletests
 from itertools import combinations
 

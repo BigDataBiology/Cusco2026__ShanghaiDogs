@@ -4,7 +4,7 @@ library(svglite)  # For saving plots as SVG
 
 # Import maaslin2 results
 # Reference categories were: "Study,This_study","env_classification,Dog Pet","Animal_age_simplified,Senior","Size_class,large","Sex,Male"
-# Maaslin2 was run everytime with a cohort excluding unknowns/unclassified depending on which variable we were assessing 
+# Maaslin2 was run every time with a cohort excluding unknowns/unclassified depending on which variable we were assessing 
 
 #maaslin_out <- read.delim("ShanghaiDogs/intermediate-outputs/singlem-profiling/Maaslin2_output/maaslin_out_ENV_PetREF/significant_results.tsv", header = TRUE) # Pet as Ref
 maaslin_out <- read.delim("ShanghaiDogs/intermediate-outputs/singlem-profiling/Maaslin2_output/maaslin_out_AGE_SeniorREF/significant_results.tsv", header = TRUE) # Senior as Ref

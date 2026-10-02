@@ -9,7 +9,7 @@ def generate_contigs_binned_table():
     metadata = pd.read_csv('../../data/ShanghaiDogsTables/SHD_bins_MIMAG_report.csv')
 
     in_eces = set()
-    for h,_ in fasta.fasta_iter(f'../../data/ShanghaiDogs_OtherResources/SHD1_EC.fna.gz', full_header=True):
+    for h,_ in fasta.fasta_iter('../../data/ShanghaiDogs_OtherResources/SHD1_EC.fna.gz', full_header=True):
         _,_,sample,contig,*_ = h.split()
         in_eces.add((sample, contig + '_polypolish'))
     contig_data = []
