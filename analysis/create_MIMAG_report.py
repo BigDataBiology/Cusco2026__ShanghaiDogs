@@ -9,7 +9,7 @@ import pandas as pd
 import os
 
 # First merge all the samples qual reports:
-# cd /data/Projects/ShanghaiDogs/intermediate-outputs/05_dereplication/00_dastool
+# cd intermediate-outputs/05_dereplication/00_dastool
 # head -n 1 D000/D000_qual_report.csv > ALL_bins_qual_report.csv
 # awk 'FNR > 1' D0*/D0*_qual_report.csv >> ALL_bins_qual_report.csv
 

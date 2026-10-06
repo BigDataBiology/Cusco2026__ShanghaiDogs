@@ -8,7 +8,7 @@ import subprocess
 
 import numpy as np
 
-MAP_FA = '/data/anna/animal_metagenome/long-mg-dog/05_dereplication/01_drep/ANI_95/drep_95_MAGs_rf.fa'
+MAP_FA = '../intermediate-outputs/long-mg-dog/05_dereplication/01_drep/ANI_95/drep_95_MAGs_rf.fa'
 
 def rmean(vs):
     vs.sort()
@@ -19,11 +19,12 @@ def hash_string(s):
     sha = hashlib.sha256()
     sha.update(s.encode('ascii'))
     return sha.hexdigest()
-    
+
+
 @TaskGenerator
 def get_contig_mapping():
     hash2contig = {}
-    for f in glob('/data/anna/animal_metagenome/long-mg-dog/05_dereplication/01_drep/ANI_95/dereplicated_genomes/*.fa.gz'):
+    for f in glob('../intermediate-outputs/long-mg-dog/05_dereplication/01_drep/ANI_95/dereplicated_genomes/*.fa.gz'):
         for h, seq in fasta_iter(f):
             sha = hash_string(seq)
             assert sha not in hash2contig

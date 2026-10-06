@@ -87,7 +87,7 @@ sns.despine(fig, trim=False)
 
 plt.tight_layout()
 #plt.show()
-plt.savefig("/data/Projects/ShanghaiDogs/intermediate-outputs/figures/sp_MAG-vs-ref_ctgs_boxplot.svg")
+plt.savefig("intermediate-outputs/figures/sp_MAG-vs-ref_ctgs_boxplot.svg")
 
 ## 1) Assess normality - reshape to long format + Shapiro test
 df_melted = df_ctgs_melted #df_trna_melted df_ctgs_melted

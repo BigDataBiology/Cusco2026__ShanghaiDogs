@@ -3,14 +3,14 @@ from pathlib import Path
 import pandas as pd
 import re
 
-BASE = Path("/work/microbiome/shanghai_dogs")
+BASE = Path(".")
 
-SKANI_DIR = BASE / "resource_generation/MAGs_Onehealth/External_cohorts/Skani_lists/Quality_MAGs/Skani_Quality_Results"
-SPIRE_META = BASE / "resource_generation/MAGs_Onehealth/External_cohorts/Skani_lists/spire_v1_genome_metadata.tsv"
+SKANI_DIR = BASE / "resource_generation/MAGs_One_Health/External_cohorts/Skani_lists/Quality_MAGs/Skani_Quality_Results"
+SPIRE_META = BASE / "resource_generation/MAGs_One_Health/External_cohorts/Skani_lists/spire_v1_genome_metadata.tsv"
 SHD_META = BASE / "data/ShanghaiDogsTables/SHD_bins_MIMAG_report.csv"
-HUMAN_ANI = BASE / "resource_generation/MAGs_Onehealth/SHD_Species_Rep_vs_Human_ani.tsv"
+HUMAN_ANI = BASE / "resource_generation/MAGs_One_Health/SHD_Species_Rep_vs_Human_ani.tsv"
 
-OUT_DIR = BASE / "resource_generation/MAGs_Onehealth"
+OUT_DIR = BASE / "resource_generation/MAGs_One_Health"
 
 EXT_OUT = OUT_DIR / "SHD_External_MAG_Matches.xlsx"
 HUMAN_OUT = OUT_DIR / "SHD_CGMR_MAG_Matches.xlsx"

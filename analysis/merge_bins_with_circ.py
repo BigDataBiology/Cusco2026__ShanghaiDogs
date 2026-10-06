@@ -3,8 +3,8 @@
 import pandas as pd
 from pathlib import Path
 
-base_binning = Path("/data/anna/animal_metagenome/long-mg-dog/04_binning/00_SemiBin2/LR")
-base_assembly = Path("/data/anna/animal_metagenome/long-mg-dog/01_assembly")
+base_binning = Path("intermediate-outputs/long-mg-dog/04_binning/00_SemiBin2/LR")
+base_assembly = Path("intermediate-outputs/long-mg-dog/01_assembly")
 
 all_samples = []
 skipped_samples = []
@@ -74,7 +74,7 @@ for i in range(53):  # D000 to D052
 # ---- Combine all samples ----
 final_df = pd.concat(all_samples, ignore_index=True)
 
-output_path = "/data/Projects/ShanghaiDogs/intermediate-outputs/tables/contig_bins_with_circ.tsv"
+output_path = "intermediate-outputs/tables/contig_bins_with_circ.tsv"
 final_df.to_csv(output_path, sep="\t", index=False)
 
 print(f"Final merged file written to: {output_path}")
